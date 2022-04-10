@@ -9,11 +9,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
     
     <!--Change fonts here-->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     
+    <script src="https://kit.fontawesome.com/10e224ada3.js" crossorigin="anonymous"></script>
+
     <!--Links CSS sheet to HTML-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -31,9 +33,9 @@
          <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Services</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#example" class="nav__link">Examples</a></li>
+                    <li class="nav__item"><a href="#example" class="nav__link">My Work</a></li>
                 </ul>
          </nav>   
     </header>
@@ -86,67 +88,80 @@
         <img src="img/aboutme.jpg" alt="Alamin second picture" class="about-me__img">
     </section>
 
-    <!--Examples-->
-    <section class="my-examples" id="examples">
-        <h2 class="section__title section__title--contact">Examples</h2>
+    <!--My work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
         <p class="section__subtitle"></p>
 
         <div class="portfolio">  
             <!--portfolio item 01-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-1.jpg" alt="" class="portflio__img 1">
+                <img src="img/portfolio-1.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 02-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-2.jpg" alt="" class="portflio__img 2">
+                <img src="img/portfolio-2.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 03-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-3.jpg" alt="" class="portflio__img 3">
+                <img src="img/portfolio-3.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 04-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-4.jpg" alt="" class="portflio__img 4">
+                <img src="img/portfolio-4.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 05-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-5.jpg" alt="" class="portflio__img 5">
+                <img src="img/portfolio-5.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 06-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-6.jpg" alt="" class="portflio__img 6">
+                <img src="img/portfolio-6.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 07-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-7.jpg" alt="" class="portflio__img 7">
+                <img src="img/portfolio-7.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 08-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-8.jpg" alt="" class="portflio__img 8">
+                <img src="img/portfolio-8.jpg" alt="" class="portfolio__img">
             </a>
 
             <!--portfolio item 09-->
             <a href="#" class="portfolio__item">
-                <img src="portfolio-9.jpg" alt="" class="portflio__img 9">
+                <img src="img/portfolio-9.jpg" alt="" class="portfolio__img">
             </a>
         </div>
         </section>
 
         <!--Footer-->
-        <footer>
+        <footer class="footer">
             <a href="mailto:alamin458@gmail.com" class="footer__link">alamin458@gmail.com</a>
-            <ul class="social list">
-                <li class="social-list__item"><a class="social-list__link"
-                href="https://github.com/alaminur">github</a></li>
-                <li class="social-list__item"><a class="social-list__link"
-                href="https://instagram.com">instagram</a></li>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/alaminur">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://instagram.com/alaminur">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://facebook.com/alamin01">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
             </ul>
 
         </footer>
