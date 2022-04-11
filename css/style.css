@@ -134,13 +134,37 @@ h3 { font-size: var(--fs-h3)}
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
-
+    padding: .5em;
+    padding-left: 1em;
 }
 
 .logo {
-    max-width: 50px;
+    max-width: 40px;
+    background-color: var(--clr-light);
 }
+
+.logo__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.logo__img {
+    transition: transform 100ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+.logo__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.logo__img:hover, 
+.logo__item:focus 
+.logo__img {
+    transform: scale(1.1);
+    opacity: .5;
+}
+
 
 .nav {
     position: fixed;
@@ -153,7 +177,7 @@ header {
     z-index: 100;
 
     transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 150ms cubic-bezier(.5, 0, .5, 1);
 
 }
 
@@ -215,7 +239,7 @@ header {
 /* Hamburger */
 .hamburger {
     background: var(--clr-accent);
-    width: 2em;
+    width: 1.2em;
     height: 3px;
     border-radius: 1em;
     display: block;
@@ -226,10 +250,10 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-accent);
-    width: 2em;
+    width: 1em;
     height: 3px;
     border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    transition: transform 150ms ease-in-out;
 }
 
 .hamburger::before,
@@ -394,15 +418,23 @@ header {
     margin: 0 auto;
 }
 
+.stacked {
+    display: grid;
+}
+
 .portfolio__item {
+    
     background: var(--clr-accent);
     overflow: hidden;
 }
 
 .portfolio__img {
-    transition: 
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    width: 100%;
+    aspect-ratio: 1/ 1;
+    object-fit: cover;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+
 }
 
 .portfolio__item:focus {
@@ -460,3 +492,14 @@ header {
     padding: .7em;
 }
 
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
