@@ -56,7 +56,6 @@ section {
 img {
     display: block;
     max-width: 100%;
-
 }
 
 strong { font-weight: var(--fw-bold)}
@@ -331,7 +330,7 @@ header {
     display: block;
     width: 2em;
     height: 1px;
-    margin: 0.3em auto 1em;
+    margin: 0.3em auto .5em;
     background: var(--clr-light);
     opacity: 0.25;
 }
@@ -345,16 +344,22 @@ header {
     margin: 0 auto;
 }
 
+
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        /* border: solid; */
+        max-width: 1200px;
+        margin: 0 auto 3em;
+
     }
 
-    .service + .service {
-        margin-left: 2em;
+    .service {
+        /* margin-left: 2em; */
+        padding: 10px 20px;
+        max-width: 350px;
+        /* border: dashed; */
+        
     }
 }
 
