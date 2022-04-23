@@ -385,10 +385,12 @@ header {
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
+        /* border: solid; */
     }
 
     .section__title--about {
         grid-area: title;
+        /* border: dashed; */
     }
 
     .section__subtitle--about {
@@ -399,12 +401,14 @@ header {
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
+        /* border: dashed; */
     }
 
     .about-me__img {
         grid-area: img;
         position: relative;
         z-index: 2;
+        /* border: dashed; */
     }
 }
 
