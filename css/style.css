@@ -458,6 +458,7 @@ header {
     display: flex;
     position: absolute;
     background-color: rgba(0, 0, 0, .25);
+    text-shadow: 3px 3px var(--clr-dark);
     /* border: solid; */
     padding: 10px;
     border-radius: 10px;
