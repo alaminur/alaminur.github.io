@@ -413,6 +413,20 @@ header {
     }
 }
 
+.about-me-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-me-individual p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
 /* My work */
 
 .my-work {
