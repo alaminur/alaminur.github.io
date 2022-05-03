@@ -542,16 +542,7 @@ header {
     text-align: center;
 }
 
-
 /* Photography page and gallery */
-
-/* .gallery {
-    display: block;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    /* border: dashed; 
-} */
 
 .gallery__section {
     max-width: 1200px;
